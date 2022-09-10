@@ -1,0 +1,115 @@
+{
+    "imovel": [
+        {
+            "id": 1,
+            "nome": "Edifício Monaco",
+            "tipo": "Apartamento",
+            "valor": 300.00,
+            "condominio": 450.90,
+            "quartos": 3,
+            "banheiros": 3,
+            "mobiliado": false,
+            "area": 80,
+            "venda": false,
+            "aluguel": true,
+            "dataAnuncio": "2022-02-14T18:30:00Z",
+            "imagem": "https://www.jsimoes.com.br/w2021/wp-content/uploads/2018/06/decoracao-de-apartamento-solucoes-inteligentes.png",
+            "endereco": 
+                {
+                    "id": 1,
+                    "rua": "Rua Maracanã",
+                    "numero": 203,
+                    "bairro": "Santa Efigênia",
+                    "cidade": "Belo Horizonte",
+                    "uf": "MG",
+                    "cep": "30260180"
+                },
+            "proprietarioId": 1
+        },
+        {
+            "id": 2,
+            "nome": "Edifício Rigamont",
+            "tipo": "Casa",
+            "valor": 1000000.00,
+            "condominio": 450.90,
+            "quartos": 6,
+            "banheiros": 5,
+            "mobiliado": true,
+            "area": 680,
+            "venda": true,
+            "aluguel": false,
+            "dataAnuncio": "2022-02-14T18:30:00Z",
+            "imagem": "https://fotos.vivadecora.com.br/decoracao-cozinha-planejada-cozinha-vitralarquitetura-164125-proportional-height_cover_medium.jpg",
+            "endereco": 
+                {
+                    "id": 2,
+                    "rua": "Rua Itami",
+                    "numero": 300,
+                    "bairro": "Guarani",
+                    "cidade": "Belo Horizonte",
+                    "uf": "MG",
+                    "cep": "31840430"
+                },
+            "proprietarioId": 1
+        },
+        {
+            "id": 3,
+            "nome": "Edifício Cacueira",
+            "tipo": "Apartamento",
+            "valor": 300.00,
+            "condominio": 250.90,
+            "quartos": 2,
+            "banheiros": 1,
+            "mobiliado": false,
+            "area": 80,
+            "venda": false,
+            "aluguel": true,
+            "dataAnuncio": "2022-02-14T18:30:00Z",
+            "imagem": "https://fotos.vivadecora.com.br/decoracao-quarto-de-casal-quato-de-casal-pequeno-com-espelho-130218-proportional-height_cover_medium.jpg",
+            "endereco": 
+                {
+                    "id": 1,
+                    "rua": "Rua Caueira",
+                    "numero": 500,
+                    "bairro": "Jaraguá",
+                    "cidade": "Belo Horizonte",
+                    "uf": "MG",
+                    "cep": "31260070"
+                },
+            "proprietarioId": 1
+        },
+        {
+            "id": 4,
+            "nome": "Edifício Pirajá",
+            "tipo": "Apartamento",
+            "valor": 5000.00,
+            "condominio": 500.00,
+            "quartos": 6,
+            "banheiros": 5,
+            "mobiliado": true,
+            "area": 680,
+            "venda": false,
+            "aluguel": true,
+            "dataAnuncio": "2022-02-14T18:30:00Z",
+            "imagem": "https://fotos.vivadecora.com.br/suite-casal-marialauracoelho-142980-proportional-height_cover_medium.jpg",
+            "endereco": 
+                {
+                    "id": 2,
+                    "rua": "Rua Bernardo Guimarães",
+                    "numero": 800,
+                    "bairro": "Savassi",
+                    "cidade": "Belo Horizonte",
+                    "uf": "MG",
+                    "cep": "30140081"
+                },
+            "proprietarioId": 1
+        }
+    ],
+    "proprietario": [
+        {
+            "id": 1,
+            "nome": "Emanuel Garrido Alves",
+            "imovelId": 1
+        }
+    ]
+}
