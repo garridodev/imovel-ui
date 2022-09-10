@@ -1,0 +1,21 @@
+<div class="row mt-5">
+    <div class="col-12">
+        <h2 style="font-weight: 600;">Compra e venda de imóveis</h2>
+        <div [formGroup]="formFiltro" class="input-group mb-3 mt-3">
+            <input type="text" mask="XXXXXX-XXX" class="form-control" #cep formControlName="cep" placeholder="Informe o cep para pesquisa" aria-label="Informe o cep para pesquisa" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-cep" type="button" (click)="buscarImovelPorCep()">Pesquisar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div *ngFor="let imovel of listaImoveis" class="col-12 col-sm-12 col-md-6 col-lg-4 mt-5">
+        <app-imovel [imovel]="imovel"></app-imovel>
+    </div>
+</div>
+<div *ngIf="listaImoveis.length == 0" class="row">
+    <p class="erro-pesquisa">
+        Nenhum resultado para essa pesquisa
+    </p>
+</div>

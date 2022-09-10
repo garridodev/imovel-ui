@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000;
+    --verde: #14A663;
+    --verde-escuro: #00644E;
+    --cinza-escuro: #666666;
+    --cinza-claro: #e8e8e8;
+    --laranja: #ff5b03;
+    --marron-claro: #d6843c;
+    --azul: #0011d1;
+    --roxo: #7049ba;
+    --rosa: #e95095;
+}

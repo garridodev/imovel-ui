@@ -1,0 +1,13 @@
+<div class="card">
+    <img class="card-img-top" height="260" src="{{imovel?.imagem}}" alt="Card image cap">
+    <div class="card-body">
+        <p class="card-text" style="font-size: 12px; margin-bottom: 0.3rem; color: var(--cinza-escuro);"> {{imovel?.tipo}} • {{imovel?.venda == true ? "Venda" : "Aluguel"}}</p>
+        <h5 class="card-title">{{imovel?.endereco?.rua}}, {{imovel?.endereco?.numero}} - {{imovel?.endereco?.bairro}}</h5>
+        <p class="card-text"> {{imovel?.area}}m² • {{imovel?.quartos}} Quartos • {{imovel?.banheiros}} Banheiros </p>
+
+        <p style="color: var(--verde);"> Valor {{imovel?.venda == true ? "da venda: R$" : "do aluguel: R$"}} {{imovel?.valor}}</p>
+        <p class="card-text" style="font-size: 12px; margin-bottom: 0.3rem; color: var(--cinza-escuro); text-align: end;"> Cep: {{imovel?.endereco?.cep}} </p>
+
+        <a href="#" class="btn btn-conhecer">Conhecer</a>
+    </div>
+</div>
