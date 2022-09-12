@@ -4,4 +4,100 @@
             <h2 style="font-weight: 600;">Cadastrar imóvel</h2>
         </div>
     </div>
+
+    <form [formGroup]="formFiltro">
+        <div class="form-row">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Vender</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Alugar</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="cep">Localização</label>
+                <input type="text" class="form-control" (blur)="buscarCep()" formControlName="cep" id="cep" placeholder="Informe o Cep para pesquisa">
+            </div>
+        </div>
+        <ng-container formGroupName="endereco">
+            <div class="row">
+                <div class="col-md-10">
+                    <label for="inputAddress">Rua</label>
+                    <input type="text" class="form-control" id="inputAddress" formControlName="rua">
+                </div>
+                <div class="col-md-2">
+                    <label for="inputAddress">Número</label>
+                    <input type="text" class="form-control" id="inputAddress" formControlName="numero">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <label for="inputAddress2">Bairro</label>
+                    <input type="text" class="form-control" id="inputAddress2" formControlName="bairro">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-8">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity" formControlName="cidade">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputCity">UF</label>
+                    <input type="text" class="form-control" id="inputCity" formControlName="uf">
+                </div>
+            </div>
+        </ng-container>
+
+        <div class="form-row">
+            <label for="">Tipos de imóvel</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Apartamento
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Casa
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="inputState">Quartos</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Selecione</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4+</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="inputState">Banheiros</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Selecione</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4+</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="inputEmail4">Preço</label>
+                <input type="text" class="form-control" id="inputEmail4">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <button type="submit" class="btn btn-conhecer">Cadastrar</button>
+        </div>
+    </form>
 </div>

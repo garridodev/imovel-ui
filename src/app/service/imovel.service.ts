@@ -35,6 +35,14 @@ export class ImovelService {
       )
   }
 
+  salvarImovel(imovel: Imovel): Observable<Imovel> {
+    return this.httpCliente.post<any>(this.url, JSON.stringify(imovel), this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError)
+      )
+  }
+
   
   buscarImovelPorCep(cep: string) {
     let params = new HttpParams();

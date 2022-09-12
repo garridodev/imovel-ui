@@ -1,0 +1,16 @@
+.btn-conhecer {
+    background-color: var(--verde);
+    color: var(--branco);
+    border: 1px solid var(--verde);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.btn-conhecer:hover {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    border: 1px solid var(--verde-escuro);
+}
